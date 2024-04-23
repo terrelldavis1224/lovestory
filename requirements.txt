@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+python-dotenv
+openai
+Pillow
+requests
+json5
+better-profanity
+flask
+Flask-Limiter
