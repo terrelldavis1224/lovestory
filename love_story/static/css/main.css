@@ -1,0 +1,227 @@
+#heart-pattern {
+  background-size: 10%;  /* Larger percentage to 'zoom out' */
+  position: fixed;  /* Keeps the background stationary */
+  left: 0;
+  top: 0;
+  z-index: -1;         
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  will-change: background-position;
+  background-image: url("/static/images/heart-pattern.svg");
+  animation: move 50s infinite linear;
+  background-repeat: repeat;
+}
+
+.cupid{
+  width: 100px; 
+  height: 100px;
+  position: relative;
+animation: marionette 3s infinite linear;
+}
+
+
+
+@keyframes marionette {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg);
+  }
+  25% {
+      transform: translateY(-10px) rotate(10deg);
+  }
+  50% {
+      transform: translateY(20px) rotate(0deg);
+  }
+  75% {
+      transform: translateY(-10px) rotate(-10deg);
+  }
+}
+
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-family: 'Sniglet', cursive;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Sniglet', cursive;
+  font-size: 32px; /* Adjusted for better mobile visibility */
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.button {
+  background-color: pink; 
+  border: none;
+  color: white;
+  padding: 36px 36px; 
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: 'Sniglet', cursive;
+  font-size: 16px; 
+  margin: 12px; 
+  cursor: pointer;
+  border-radius: 12px;
+  animation: shake 2s infinite ease-in-out;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes shake {
+  0%, 100% { 
+      transform: rotate(0deg); 
+  }
+  25% { 
+      transform: rotate(20deg); 
+  }
+  50% { 
+      transform: rotate(0deg); 
+  }
+  75% { 
+      transform: rotate(-20deg); 
+  }
+}
+
+@keyframes move {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+.dot {
+  position: absolute;
+  pointer-events: none; 
+  user-select: none; 
+  animation-fill-mode: forwards ;
+  animation: fall 3s linear;
+}
+
+@keyframes fall {
+  0% { 
+      transform: translateY(0);
+      opacity: 1; 
+  } 
+  50% {
+      transform: translateY(200px);
+      opacity: 0.5;
+  }
+  100% { 
+      transform: translateY(400px);
+      opacity: 0; 
+  }
+}
+
+.c {
+  text-align: left;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  color: wheat;
+}
+
+
+.love_story_quote {
+  font-family: 'Sniglet', cursive;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+.love_story_about {
+  font-family: 'Sniglet';
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+.love_story_text {
+  font-family: 'Sniglet', cursive;
+  font-size: 16px; 
+  color: #fff; 
+  text-shadow: 2px 2px 4px #000000; 
+  text-align: center; 
+  padding: 20px 0; 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: auto; 
+}
+
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 60%;              
+  height: 25px;            
+  background: linear-gradient(90deg, red 60%, #d6d6d6 60%); 
+  border-radius: 12px;     
+  box-shadow: 2px 2px 4px #000000; 
+  outline: none;            
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  width: 25px;             
+  height: 25px;            
+  background: white;        
+  border-radius: 50%;       
+  cursor: pointer;          
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-track {
+  background: linear-gradient(90deg, red 60%, #d6d6d6 60%);
+  border-radius: 12px;
+}
+
+.Lucky_button {
+  background-color: pink; 
+  border: solid 2px white;
+  width: 70px;  
+  height: 40px; 
+  color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #000000;
+  font-size: 10px; 
+  justify-content: center; 
+  align-items: center;     
+  overflow: hidden;        
+  font-family: 'Sniglet', cursive;
+  color: #fff;
+  
+}
+
+
+@keyframes shrink {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+
+  }
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body class="backgroundcolor">
+    <div id="heart-pattern"></div>
+    <h1 class="header">My Love Story</h1>
+    <h2 class="header">Motivation/Inspiration</h2>
+    <p class="love_story_about">
+        My Love Story was inspired by a combination of several elements.<br> 
+         Firstly, it evolved from an idea I originally developed for a different project at a hackathon 
+         (Here<a href="https://github.com/terrelldavis1224/h2ai"> H2AI</a> ).<br> 
+         Additionally, the title and thematic influences are drawn from Taylor Swift's song 'Love Story' Hence the name.<br>
+         When listening to the song, shortly after the hackathon conclusion, I though
+         that this could be a good way to flesh out the vision I had with more time<br>
+         Finally, the concept of both 
+    </p>
+    <script src="{{ url_for('static', filename='js/mouse.js') }}"></script>
+
+
+    <p class="love_story_about"></p>
+
+    <h2 class="header">About</h2>
+    <p class="love_story_about">
+        My Love Story is a web application that crafts personalized romantic tales tailored to individual preferences and desires.<br>
+        This unique platform transforms the art of storytelling by integrating user responses into a rich, evolving narrative.<br>
+        Experience the joy of creativity as you directly influence the unfolding of your own romantic adventure.<br>
+        Delight in sharing your bespoke love story with friends or keep it as a personal treasure to revisit.
+    </p>
+
+
+    <h2 class="header">Guidelines</h2>
+
+    <p class="love_story_about">
+        using inappropiate language or content will result in content not be generate.Pls don't try to do so<br>
+    </p>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='/'">Home</button>
+
+    </div>
+    <img src="{{ url_for('static', filename='images/cupid.png') }}" class="cupid">
+    
+
+
+</body>
+</html>
