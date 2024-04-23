@@ -9,3 +9,4 @@ json5
 better-profanity
 flask
 Flask-Limiter
+gunicorn
